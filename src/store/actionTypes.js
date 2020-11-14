@@ -1,0 +1,8 @@
+export const SET_USER = 'SET_USER'
+export const USER_EXIT = 'USER_EXIT'
+export const TURN_CARD = 'TURN_CARD'
+export const CHECK_CARD = 'CHECK_CARD'
+export const SET_SHIRT = 'SET_SHIRT'
+export const SET_DIFFICULTY = 'SET_DIFFICULTY'
+export const SET_NEWGAME = 'SET_NEWGAME'
+export const CLEAR_WINVALUE = 'CLEAR_WINVALUE'

@@ -1,0 +1,10 @@
+.gridTable{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.margin{
+    margin-left: 40%;
+}
+.margin1{
+    margin-left: 35%;
+}

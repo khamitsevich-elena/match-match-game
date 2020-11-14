@@ -1,0 +1,31 @@
+.rulesHeader{
+    height: 7vh;
+}
+
+.rules{
+    margin-top:-5%;
+    color: #054775;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size:1vw;
+}
+
+@keyframes glowing {
+    0% { background-color: #054775; box-shadow: 0 0 2px #074673; 	transform: scale(1) }
+    50% { background-color: #1082d4; box-shadow: 0 0 9px #0e87de;	transform: scale(1.2)  }
+    100% { background-color: #074b7b; box-shadow: 0 0 2px #094d7d;  transform: scale(1) }
+}
+
+.playButton {
+    animation: glowing 1500ms infinite;
+    width: 8vw;
+    height: 4vw;
+    margin-top:2vw;
+    font-size:2vw;
+    transition: 1s linear;
+}
+.text{
+    font-weight: 600;
+    color:white
+}

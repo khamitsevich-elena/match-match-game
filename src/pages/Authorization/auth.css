@@ -1,0 +1,13 @@
+.formcontainer{
+    width: 25vw;
+    text-align: center;
+}
+.authHeader{
+    height: 7vh;
+}
+.auth{
+    color:white;
+    font-weight: 600;
+    font-size: 2vw;
+    margin-bottom: 3vh;
+}

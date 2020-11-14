@@ -1,0 +1,135 @@
+.activefalse {
+    opacity: 0;
+}
+
+.containerGame{
+  background-image:url(../../picture/background/bg2.jpg);
+}
+
+.congratulations{
+  transition: 2s;
+  animation: show 2s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes show{
+  0%{
+  opacity:0;
+  position: absolute;
+  width:20vw;
+  height:10vw;
+  top: 50%;
+  left:50%;
+  margin-left:-10vw;
+  margin-top:-5vw;
+  font-size: 2vw;
+  color:white;
+  font-weight: 300;
+  transform: rotate(0deg);
+  }
+  100% {
+  transform: rotate(360deg);
+  opacity:1;
+  position: absolute;
+  width:50vw;
+  height:10vw;
+  top: 50%;
+  left:50%;
+  margin-left:-25vw;
+  margin-top:-5vw;
+  font-size: 5vw;
+  color:#054775;
+  font-weight: 600;
+  }
+  }
+
+.container{
+  background-image:url(../../picture/background/bg3.jpg);
+}
+
+.container, .containerGame{
+    padding: 15px 25px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;;
+    width: 80vw;
+    height:86vh;
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.gridContainer10,.gridContainer18,.gridContainer24{
+  height:80vh;
+  margin:0 auto;
+  display: grid;
+  grid-column-gap:1vw;
+  grid-row-gap:1vw;
+}
+.gridContainer24{
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.gridContainer18{
+    padding:0 8%;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.gridContainer10{
+    padding:2% 6%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.turnON {
+    animation-name: turnON;
+    animation-duration:0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes turnON {
+    from {
+      transform: rotate(0deg) translate(100%);
+    }
+    to {
+      transform: rotateY(180deg) translate(0px);
+    }
+}
+
+.turnOFF {
+    animation-name: turnOFF;
+    animation-duration:0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes turnOFF {
+    from {
+      transform: rotate(0deg) translate(100%);
+    }
+    to {
+      transform: rotateY(180deg) translate(0px);
+    }
+}
+
+.opacityAnimation {
+    animation-name: opacityAnimation;
+    animation-duration:0.7s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacityAnimation {
+    from { opacity: 1; transform: rotateY(180deg)
+     }
+    to { opacity: 0;  transform: rotateY(180deg) }
+}
+  
+.opacity{
+  opacity: 0;
+}
